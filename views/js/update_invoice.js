@@ -1,3 +1,4 @@
+import routes from "./routes";
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');

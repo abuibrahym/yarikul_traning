@@ -1,10 +1,10 @@
-
+import routes from "./routes";
 document.addEventListener('DOMContentLoaded', function() {
     // Get the table body element
     var tableBody = document.getElementById('invoiceTableBody');
   
     // Fetch the data from the PHP script
-    fetch('../../controller/list_invoices.php') // /php/list_invoices.php
+    fetch(routes.LIST_INVOICES) 
     .then(function(response) {
         if (response.ok) {
             console.log('inside if block . response is ok!!!');

@@ -31,9 +31,11 @@ class Database{
     }
 }
 
-
-
+// $sql = "INSERT INTO invoice (invoice_number, invoice_name, address) VALUES (:num, :name, :address)";
+// $params = ['num' => 1, 'name' => 'test1', 'address' => 'xyz']; // for testing
 // $db = new Database($config);
+// $result = $db->query($sql, $params);
+
 // $query = "select * from invoice where id = :id";
 // $posts = $db->query($query, ['id'=>'5'])->fetch(PDO::FETCH_ASSOC);
 

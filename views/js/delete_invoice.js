@@ -1,7 +1,8 @@
+import routes from "./routes";
 const deleteInvoice = (id) =>{
     console.log('inside delete function..')
     if (confirm("Are you sure you want to delete this invoice?")) {
-        fetch('../../controller/delete_invoice.php?id=' + id, {
+        fetch(routes.DELETE_INVOICE + '?id=' + id, {
             method : 'DELETE',
         })
         .then(res => {

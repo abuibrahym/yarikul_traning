@@ -1,4 +1,5 @@
 // script.js
+import routes from "./routes";
 document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('createInvoice').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
